@@ -16,7 +16,7 @@ from src.utils import save_object
 
 @dataclass
 class DataTransformationConfig:
-    preprocessor_obj_file_path = os.path.join('artific',"model.pkl")
+    preprocessor_obj_file_path = os.path.join('artifacts',"model.pkl")
 
 class DataTransformation:
     def __init__(self):
@@ -73,7 +73,7 @@ class DataTransformation:
         except Exception as e:
             raise CustomException(e,sys)
 
-    def intiate_data_transformation(self,train_path,test_path):
+    def initiate_data_transformation(self,train_path,test_path):
         try:
             train_df=pd.read_csv(train_path)
             test_df=pd.read_csv(test_path)
