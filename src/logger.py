@@ -1,4 +1,4 @@
-import logging # its can be recorded my entire project
+import logging # it can be recorded my entire project
 import os # WHich operating system 
 from datetime import datetime
 
